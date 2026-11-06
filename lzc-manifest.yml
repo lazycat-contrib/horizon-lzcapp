@@ -1,0 +1,18 @@
+application:
+  subdomain: horizon
+  public_path:
+    - /
+
+services:
+  horizon:
+    # ghcr.io/dockers-x/horizon:latest (auto-built from Thysrael/Horizon)
+    image: registry.lazycat.cloud/czyt/dockers-x/horizon:PLACEHOLDER
+    environment:
+      - TZ=Asia/Shanghai
+    binds:
+      - /lzcapp/var/data:/app/data
+    command: --hours {{ .U.hours }}
+
+usage: |
+  首次使用：将 AI API Key（如 OPENAI_API_KEY）和信源配置 data/config.json 放入应用数据目录后触发运行。
+  应用按计划每日生成中英双语简报，输出在数据目录中，可通过 webhook / 邮件推送。

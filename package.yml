@@ -1,0 +1,20 @@
+package: community.lazycat.app.horizon
+version: 0.1.0
+name: Horizon
+description: "AI-powered news radar: aggregates your sources and generates daily bilingual (EN/zh) briefings."
+min_os_version: 1.5.0
+author: Thysrael
+license: MIT
+homepage: https://github.com/Thysrael/Horizon
+
+locales:
+  zh:
+    name: "Horizon"
+    description: "AI 驱动的新闻雷达：聚合你的信息源，生成中英双语每日简报。"
+  en:
+    name: "Horizon"
+    description: "AI-powered news radar: aggregates your sources and generates daily bilingual (EN/zh) briefings."
+
+permissions:
+  required:
+    - net.internet

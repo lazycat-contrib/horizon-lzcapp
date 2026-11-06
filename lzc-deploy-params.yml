@@ -1,0 +1,12 @@
+params:
+  - id: hours
+    type: string
+    name: "Briefing window (hours)"
+    description: "Fetch items from the last N hours for each run (default 24)."
+    default_value: "24"
+
+locales:
+  zh:
+    hours:
+      name: "简报时间窗（小时）"
+      description: "每次运行抓取最近 N 小时的内容（默认 24）。"
