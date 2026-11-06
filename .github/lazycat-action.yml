@@ -15,9 +15,6 @@ update:
   version_source:
     type: image
     image: horizon
-    channel: custom
-    sort: created
-    tag_regex: '^latest$'
     bump: patch
 
 images:
