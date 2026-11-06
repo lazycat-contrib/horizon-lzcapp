@@ -6,7 +6,7 @@ application:
 services:
   horizon:
     # ghcr.io/dockers-x/horizon:latest (auto-built from Thysrael/Horizon)
-    image: registry.lazycat.cloud/czyt/dockers-x/horizon:PLACEHOLDER
+    image: ghcr.1ms.run/dockers-x/horizon:latest@sha256:78254eab80aeca9e8b3724314fd8798db54b7daae77b01bba202eeece8b68612
     environment:
       - TZ=Asia/Shanghai
     binds:
