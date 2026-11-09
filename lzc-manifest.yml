@@ -2,17 +2,16 @@ application:
   subdomain: horizon
   public_path:
     - /
-
 services:
   horizon:
     # ghcr.io/dockers-x/horizon:latest (auto-built from Thysrael/Horizon)
-    image: ghcr.1ms.run/dockers-x/horizon:latest@sha256:78254eab80aeca9e8b3724314fd8798db54b7daae77b01bba202eeece8b68612
+    # upstream: ghcr.io/dockers-x/horizon:latest@sha256:ec04b1478a3af352182e0e92bcda61f72d784ebfea83b55bb2ea8698f221bbb0
+    image: ghcr.1ms.run/dockers-x/horizon:latest@sha256:ec04b1478a3af352182e0e92bcda61f72d784ebfea83b55bb2ea8698f221bbb0
     environment:
       - TZ=Asia/Shanghai
     binds:
       - /lzcapp/var/data:/app/data
     command: --hours {{ .U.hours }}
-
 usage: |
   首次使用：将 AI API Key（如 OPENAI_API_KEY）和信源配置 data/config.json 放入应用数据目录后触发运行。
   应用按计划每日生成中英双语简报，输出在数据目录中，可通过 webhook / 邮件推送。
