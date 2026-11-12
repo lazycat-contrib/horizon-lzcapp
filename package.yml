@@ -1,5 +1,5 @@
 package: community.lazycat.app.horizon
-version: 0.1.3
+version: 0.1.4
 name: Horizon
 description: "AI-powered news radar: aggregates your sources and generates daily bilingual (EN/zh) briefings."
 min_os_version: 1.5.0
