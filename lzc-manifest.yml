@@ -5,8 +5,8 @@ application:
 services:
   horizon:
     # ghcr.io/dockers-x/horizon:latest (auto-built from Thysrael/Horizon)
-    # upstream: ghcr.io/dockers-x/horizon:latest@sha256:d3eeffbd2b74c7f47b030242c6e938b8fb18c3f333c3220bd8282ccd9e34bfcb
-    image: ghcr.1ms.run/dockers-x/horizon:latest@sha256:d3eeffbd2b74c7f47b030242c6e938b8fb18c3f333c3220bd8282ccd9e34bfcb
+    # upstream: ghcr.io/dockers-x/horizon:latest@sha256:41bcaacb35e3aedea52f3e60efdc9a65074446ebbcd704597a8b905258fab544
+    image: ghcr.1ms.run/dockers-x/horizon:latest@sha256:41bcaacb35e3aedea52f3e60efdc9a65074446ebbcd704597a8b905258fab544
     environment:
       - TZ=Asia/Shanghai
     binds:
